@@ -7,8 +7,8 @@
         "Windows"   
     ],
  "iconUri": "https://globalartifactstg.blob.core.windows.net/globalsoftwarelink4artifact/G7.png",
-    "targetOsType": "Windows",
+   "targetOsType": "Windows",
     "runCommand": {
-        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File ssms.ps1"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./startChocolatey.ps1 -PackageList ', 'sql-server-management-studio', '\"')]"
     }
 }
